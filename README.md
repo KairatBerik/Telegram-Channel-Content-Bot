@@ -39,13 +39,13 @@ Install these packages yourself:
   ```
 
 3. Install the ChromeDriver that works for you and put the path to it in the code of the app.py
-   ''sh
+   ```sh
    path = '**here**'
-   ''
+   ```
 5. Install any model from HuggingFace portal that **Generates text** and is **gguf**, then also put the path to it in the code of the app.py
-   ''sh
+   ```sh
    llm = LlamaCpp(model_path='**here**', ........)
-   ''
+   ```
 ## 2. Usage
 
 1. On the sidebar you can see the **Pick your Telegram Channel**, where you can:
