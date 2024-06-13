@@ -52,7 +52,7 @@ Install these packages yourself:
    
       - Search for the Telegram Channel in TGSTAT.com
       - Copy the Link and input the link in the search bar
-      - Choose a number of posts you want to grasp(recency). It memorizes 20 posts from the start, so by choosing '1' you choosing to grasp 40 posts and so on by +20 posts every number up.          
+      - Choose a number of posts you want to grasp(recency). It takes only 20 posts from the start, so by choosing '1' you choosing to take 20 more posts to overall grasp 40 posts, by choosing '2' you choosing to take 20 more posts to overall grasp 60 posts, and so on. 
         
 3. On the main side of the page you will see the **Chat with the Bot** showing off the text_input area for you to ask a question and the history of your chat with the Bot.
 
