@@ -1,0 +1,12 @@
+llama_cpp
+streamlit
+selenium
+pandas
+langchain_community
+langchain.document_loaders
+langchain.text_splitter
+langchain.embeddings
+langchain.vectorstores
+langchain.llms
+langchain.memory
+langchain.chains
