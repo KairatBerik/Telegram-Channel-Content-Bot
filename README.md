@@ -42,7 +42,7 @@ Install these packages yourself:
    ```sh
    path = '**here**'
    ```
-5. Install any model from HuggingFace portal that **Generates text** and is **gguf**, then also put the path to it in the code of the app.py
+5. Install any model that you like from HuggingFace portal that **Generates text** and is **gguf**, then also put the path to it in the code of the app.py
    ```sh
    llm = LlamaCpp(model_path='**here**', ........)
    ```
