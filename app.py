@@ -53,7 +53,7 @@ if input_link:
         dates.append(x.find_element(By.CSS_SELECTOR, 'p.text-muted').text)
 
     num_clicks = int(st.sidebar.radio(
-        "How many posts? (in 20s)",
+        "How many posts? (in +20 posts)",
         ["1", "2", "3"]))
 
     for _ in range(num_clicks):
