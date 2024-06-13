@@ -1,4 +1,4 @@
-llama_cpp
+llama_cpp_python
 streamlit
 selenium
 pandas
@@ -10,3 +10,4 @@ langchain.vectorstores
 langchain.llms
 langchain.memory
 langchain.chains
+huggingface-hub
