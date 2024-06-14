@@ -4,9 +4,9 @@ selenium
 pandas
 langchain_community
 langchain
-langchain.embeddings
-langchain.vectorstores
-langchain.llms
-langchain.memory
-langchain.chains
+langchain-embeddings
+langchain-vectorstores
+langchain-llms
+langchain-memory
+langchain-chains
 huggingface-hub
