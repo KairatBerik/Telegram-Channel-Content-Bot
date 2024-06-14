@@ -4,7 +4,6 @@ selenium
 pandas
 langchain_community
 langchain
-langchain.text_splitter
 langchain.embeddings
 langchain.vectorstores
 langchain.llms
