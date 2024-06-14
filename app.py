@@ -29,7 +29,7 @@ st.header("Chat with the Bot")
 
 input_link = st.sidebar.text_input(label="", placeholder='upload your link from TGSTAT.com')
 
-path = ''
+path = '/Users/kayirat/Desktop/chromedriver-mac-x64'
 
 service = Service(Executable_path = path)
 driver = webdriver.Chrome(service = service)
@@ -37,12 +37,11 @@ driver = webdriver.Chrome(service = service)
 if input_link:
     driver.get(input_link)
     
-    
     WebDriverWait(driver, 20).until(
         EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'div.post-container'))
     )
 
-  
+   
     products = driver.find_elements(By.CSS_SELECTOR, 'div.post-container')
 
     txt = []
@@ -54,7 +53,7 @@ if input_link:
 
     num_clicks = int(st.sidebar.radio(
         "How many posts? (in +20 posts)",
-        ["1", "2", "3"]))
+        ["1", "2", "3", "4", "5", "6"]))
 
     for _ in range(num_clicks):
         try:
@@ -73,7 +72,7 @@ if input_link:
             st.sidebar.write(f"Error occurred: {e}")
             break
 
- 
+   
     df = pd.DataFrame({"txt": txt, "date": dates})
     df.to_csv("tg.csv", index=True)
     driver.quit()
@@ -106,16 +105,19 @@ if input_link:
     db = FAISS.from_documents(chunks, embeddings)
     db.save_local('vectorstore/dbfaiss')
 
-    llm = LlamaCpp(model_path='', temperature=0.1, max_tokens=2000)
+    llm = LlamaCpp(model_path='./Phi-3-mini-4k-instruct-q4.gguf', temperature=0.1, max_tokens=2000)
     qa = ConversationalRetrievalChain.from_llm(llm=llm, retriever=db.as_retriever())
    
     if "messages" not in st.session_state:
         st.session_state.messages = []
-
 
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
     prompt = st.chat_input("Enter your question about the content of this channel")
     chat_with_csv(prompt)
+    
+
+
+
     
