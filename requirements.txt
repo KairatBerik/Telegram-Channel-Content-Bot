@@ -5,7 +5,4 @@ pandas
 langchain_community
 langchain
 
-
-langchain-llms
-
 huggingface-hub
