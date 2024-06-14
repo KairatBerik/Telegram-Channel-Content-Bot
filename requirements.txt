@@ -3,7 +3,7 @@ streamlit
 selenium
 pandas
 langchain_community
-langchain.document_loaders
+langchain
 langchain.text_splitter
 langchain.embeddings
 langchain.vectorstores
