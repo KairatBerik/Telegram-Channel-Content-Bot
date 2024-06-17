@@ -17,8 +17,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import re 
-huggingface-cli download microsoft/Phi-3-mini-4k-instruct-gguf Phi-3-mini-4k-instruct-q4.gguf --local-dir . --local-dir-use-symlinks False
-
+from webdriver_manager.chrome import ChromeDriverManager
 
 st.set_page_config(layout='wide')
 
@@ -31,10 +30,8 @@ st.header("Chat with the Bot")
 
 input_link = st.sidebar.text_input(label="", placeholder='upload your link from TGSTAT.com')
 
-path = '/Users/kayirat/Desktop/chromedriver-mac-x64'
 
-service = Service(Executable_path = path)
-driver = webdriver.Chrome(service = service)
+driver = webdriver.Chrome(ChromeDriverManager().install())
 
 if input_link:
     driver.get(input_link)
