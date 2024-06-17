@@ -24,18 +24,13 @@ Created and designed by [Kairat Berik](https://www.linkedin.com/in/kairat-berik/
 
 Install these packages yourself: 
  ```sh
-  pip install llama_cpp
+  pip install llama_cpp_python
   pip install streamlit
   pip install selenium
   pip install pandas
   pip install langchain_community
-  pip install langchain.document_loaders
-  pip install langchain.text_splitter
-  pip install langchain.embeddings
-  pip install langchain.vectorstores
-  pip install langchain.llms
-  pip install langchain.memory
-  pip install langchain.chains
+  pip install langchain
+  pip install huggingface-hub
   ```
 
 3. Install the ChromeDriver that works for you and put the path to it in the code of the app.py
