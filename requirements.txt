@@ -5,4 +5,4 @@ pandas
 langchain_community
 langchain
 huggingface-hub
-
+webdriver-manager
