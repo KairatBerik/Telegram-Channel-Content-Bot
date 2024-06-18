@@ -31,7 +31,10 @@ st.header("Chat with the Bot")
 input_link = st.sidebar.text_input(label="", placeholder='upload your link from TGSTAT.com')
 
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+path = '/Users/kayirat/Desktop/chromedriver-mac-x64'
+
+service = Service(Executable_path = path)
+driver = webdriver.Chrome(service = service)
 
 if input_link:
     driver.get(input_link)
